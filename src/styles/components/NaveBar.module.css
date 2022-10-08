@@ -1,0 +1,117 @@
+.braind, 
+.naveBarContainer , 
+.naveBar > ul,
+.naveBar > ul a{
+  display: flex;
+}
+
+.naveBarContainer {
+  padding: 0rem 5rem;
+  width: 100%;
+  font-size: 1.3rem;
+  background-color: #1667fb;
+}
+
+.naveBarContainer a strong{
+  transition: 2ms;
+  color: white;
+}
+
+.naveBarContainer a strong:hover{
+  transform: scale(0.9);
+}
+
+.braind{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 7px;
+}
+
+.naveBar > ul{
+  list-style: none;
+
+  color: #fff;
+}
+
+.naveBar > ul a{
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0 13px 3px 10px;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.naveBar > ul a:active{
+  color: rgba(90, 87, 87, 0.829);
+}
+
+.naveBarColorWhite .naveBar > ul a:hover{
+  border-bottom: 2px solid #000;
+}
+
+.naveBarColorBlack .naveBar > ul a:hover{
+  border-bottom: 2px solid #fff;
+}
+
+.naveBarColorBlack {
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.203);
+  background-color: #000;
+  color: white;
+  transition: 0.05s;
+}
+
+.naveBarColorWhite{
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  color: #000;
+  transition: 0.05s;
+}
+
+.naveIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.naveIcon button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+  .naveBarContainer, .naveBarContainer a strong{
+    font-size: 99.9%;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .naveBarContainer, .naveBarContainer a strong{
+    font-size: 97.9%;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .naveBarContainer, .naveBarContainer a strong{
+    font-size: 91.3%;
+  }
+
+  .naveBar{
+    display: none;
+  }
+  
+}
+
+
+@media (max-width: 576px) {
+  .naveBarContainer, .naveBarContainer a strong{
+    font-size: 86.3%;
+  }
+}

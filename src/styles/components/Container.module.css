@@ -1,0 +1,87 @@
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+.title > h1{
+   font-size: 2.5rem;
+   margin: 0;
+   padding-bottom: 5px;
+}
+
+.title > p{
+    text-align: justify;
+    width: 50%;
+}
+
+.box{
+    display: flex;
+}
+
+.page iframe{
+    width: 55rem;
+    height: 35rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+
+.button{
+    margin: 3rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: red;
+    border: 1px solid;
+    border-radius: 1rem;
+}
+
+.button:active{
+    color: rgb(22, 221, 22);
+}
+
+.codigs{
+    display: flex;
+    width: 40rem;
+    height: 80%;
+    margin-left: 4rem;
+}
+.spaceCodigs{
+    padding-left: 1rem;
+}
+
+.codigButton{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    padding: 2rem;
+    border-left:  1px solid gray;
+    max-height: 13rem;
+}
+
+.cod{
+    width: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Pages Medias */
+
+@media (max-width: 1200px){
+    .page iframe{
+        width: 55rem;
+    }
+}
+
+@media (max-width: 990px){
+    .page iframe{
+        width: 45rem;
+    }
+}
+
+@media (max-width: 767px){
+    .page iframe{
+        width: 35rem;
+    }
+}

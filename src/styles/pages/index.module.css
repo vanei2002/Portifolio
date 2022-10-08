@@ -1,0 +1,126 @@
+.mensege{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    background-color: rgb(46, 202, 6);
+    color: #fff;
+    border-radius: 15px 10px 0px 10px;
+    padding: 10px;
+    max-width: 250px;
+}
+
+.logo, .mensege{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo img{
+    max-width: 80rem;
+    animation: log 5s infinite;
+    transform: scaleX(1.1) scaleY(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.sectionLanguagens {
+  background-size: cover;
+}
+
+.LanguagensContainer,
+.LanguagensContainer > ul{
+    display: flex;
+}
+
+.LanguagensContainer{
+    margin: 0 3rem; 
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+    padding-bottom: 1rem;
+}
+
+.LanguagensContainer h1{
+    font-size: 3rem;
+    color:  black;
+}
+
+.LanguagensContainer > ul{
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.LanguagensContainer button{
+    border: none;
+    border-radius: 1rem;
+    padding: 0.8rem ;
+    max-width: 7rem;
+    margin: 0 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.LanguagensContainer button:active{
+    transform: scaleX(0.9) scaleY(0.9);
+}
+
+.languagens{
+    height: 100%;
+    margin-top: 4rem;
+}
+
+.black, .black h1{
+    color: white;
+}
+
+.black{
+    background-color: #22272E;
+}
+
+/* Pages Medias */
+
+@media (max-width: 1200px){
+    .logo img{
+        width: 70rem;
+        transition: 10ms;
+    }
+}
+
+@media (max-width: 990px){
+    .LanguagensContainer ul{
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       grid-gap: 1rem;
+    }
+
+    .logo img{
+        width: 50rem;
+        transition: 10ms;
+    }
+}
+
+@media (max-width: 767px){
+    .LanguagensContainer ul{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-gap: 1rem;
+       font-size: 86.3%;
+    }
+
+    .logo img{
+        width: 30rem;
+        transition: 10ms;
+    }
+}
+
+/* Pages Animation */
+
+@keyframes log{
+    from{
+       transform: scaleX(1.1) scaleY(1.1);
+    }
+    to{
+        transform: scaleX(0.9) scaleY(0.9); 
+    }
+};
+
